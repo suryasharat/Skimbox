@@ -1,0 +1,70 @@
+body{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.menu-bar{
+    border: 2px solid #000;
+    background-color: transparent;
+}
+
+.menu-bar ul{
+    display: inline-flex;
+    list-style-type: none;
+    margin: 0;
+}
+.menu-bar ul li{
+    width: 120px;
+    
+    padding: 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu-bar ul li:hover{
+    background-color: rgb(155, 197, 233);
+    border-radius: 2px;
+}
+
+.sub-menu{
+    display: none;
+}
+.menu-bar ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 3px solid #000;
+}
+.menu-bar ul li:hover .sub-menu ul{
+    display: block;
+    padding: 0;
+}
+.menu-bar ul li:hover .sub-menu ul li{
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+}
+.menu-bar ul li:hover .sub-menu ul li:nth-child(2){
+    border-bottom: 2px solid #000;
+}
+
+.menu-bar ul li:hover .sub-menu ul li:nth-child(6){
+    border-bottom: 2px solid #000;
+}
+
+.menu-bar ul li:hover .sub-menu ul li p{
+    color: #000;
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+}
+.menu-bar ul li:hover .sub-menu ul li:nth-child(3){
+    color: gray;
+}
